@@ -4,11 +4,10 @@ import java.util.ArrayList;
 
 import org.apache.hadoop.hive.ql.exec.UDAF;
 import org.apache.hadoop.hive.ql.exec.UDAFEvaluator;
-import org.apache.hadoop.hive.serde2.io.DoubleWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 
-public class SumPer extends UDAF {
+public class MyAvg extends UDAF {
 
 	public static class AvgEvaluate implements UDAFEvaluator {
 		public static class PartialResult {
